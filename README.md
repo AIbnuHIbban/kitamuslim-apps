@@ -16,5 +16,5 @@ Adalah Aplikasi Mobile yang membantu Muslim dalam melakukan kegiatan sehari - ha
 
  - Ibnu  : [https://github.com/AIbnuHIbban](https://github.com/AIbnuHIbban)
  - Arifin : [https://github.com/arifin26](https://github.com/arifin26)
- - Rizan : [https://github.com/rirafi23](https://github.com/rirafi23)
+ - Rizqan : [https://github.com/rirafi23](https://github.com/rirafi23)
 
