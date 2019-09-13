@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'kitamuslim' do
-  # Pods for kitamuslim
+target 'orian' do
+  # Pods for orian
   pod 'React', :path => '../node_modules/react-native/'
   pod 'React-Core', :path => '../node_modules/react-native/React'
   pod 'React-DevSupport', :path => '../node_modules/react-native/React'
@@ -27,7 +27,9 @@ target 'kitamuslim' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'kitamuslimTests' do
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  target 'orianTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -35,10 +37,10 @@ target 'kitamuslim' do
   use_native_modules!
 end
 
-target 'kitamuslim-tvOS' do
-  # Pods for kitamuslim-tvOS
+target 'orian-tvOS' do
+  # Pods for orian-tvOS
 
-  target 'kitamuslim-tvOSTests' do
+  target 'orian-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
