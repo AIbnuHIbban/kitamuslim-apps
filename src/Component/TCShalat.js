@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet, Image, FlatList } from 'react-native'
+import { View, Text, StyleSheet, Image, FlatList, ScrollView } from 'react-native'
 import Data from '../Data Base/TCShalat.json'
 
 export default class TCShalat extends React.Component {
@@ -14,6 +14,7 @@ export default class TCShalat extends React.Component {
   render () {
     return (
       <View>
+      <ScrollView>
         <FlatList
           data={this.state.Data}
           keyExtractor={(index, item) => index.toString()}
@@ -25,11 +26,10 @@ export default class TCShalat extends React.Component {
               // kalo ada yg bingung bisa nanya ke si pembuat
 
               <View>
-
                   <Text>{item.id}</Text>
                   <Text>{item.title}</Text>
                   <Image
-                    style={{ width: 100, height: 100 }}
+                    style={{resizeMode:"center", height:200,}}
                     source={{ uri: item.image }}
                   />
                   <Text>{item.diskripsi}</Text>
@@ -40,6 +40,7 @@ export default class TCShalat extends React.Component {
             )
           }}
         />
+        </ScrollView>
       </View>
     )
   }
