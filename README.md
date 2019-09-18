@@ -4,9 +4,9 @@ Adalah Aplikasi Mobile yang membantu Muslim dalam melakukan kegiatan sehari - ha
 ## Content
 
  - [ ] Splash Screen
- - [ ] Tata Cara Shalat
- - [ ] Dzikir Setelah Shalat
- - [ ] Dzikir Pagi & Petang
+ - [x] Tata Cara Shalat
+ - [x] Dzikir Setelah Shalat
+ - [x] Dzikir Pagi & Petang
  - [ ] Profile Page
  
 
