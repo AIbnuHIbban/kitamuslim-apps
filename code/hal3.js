@@ -1,34 +1,72 @@
 import React from 'react'
-import {View,Text,TextInput,TouchableNativeFeedback,Image,ScrollView,StyleSheet} from 'react-native'
-
+import {View,Text,TextInput,TouchableNativeFeedback,Image,ScrollView,StyleSheet,FlatList} from 'react-native'
+import DZKRpetang from './DZKRpetang'
 
 
 export default class Screen03 extends React.Component{
   state={
-    teks:'',
-    hasilnya:[]
+   DZKRpetang
   }
  
  render(){
     return(
       <View style={{flex:1}}>
       
-      <View style={Styles.bag3}>
-        <Text>
-        Dzikir Setelah Shalat
-        </Text>
-      </View>
+      <View style={{flex:1}}>
+      <View >
+      <FlatList 
+                    data={this.state.DZKRpetang}
+                    keyExtractor={(index,item) => toString()}
+                    renderItem={({index,item}) => {
+                        return(
+                          <ScrollView>
+                            <View>
+                           
+                                    <View style={{paddingTop:30}} >
+                                    <View style={{flexDirection:'column'}}>
+                                       
+                                        <View style={{flexDirection:'row',paddingLeft:10}}>
+                                        
+                                        <View >
+                                          <Text style={{padding:10,backgroundColor:'#9400d3',borderRadius:100,height:40,width:40,textAlign:'center',fontWeight:'bold',color:'#fff'}}>{item.id}</Text>
+                                        </View>
+
+                                        <View style={{flexDirection:'column',paddingLeft:10}}>
 
 
-      <View style={Styles.bag5}>
-        <Text>hello</Text>
+                                        <View style={{paddingRight:60,paddingTop:30}}>
+                                        <Text style={{fontSize:20}}>{item.arab}</Text>
+                                        <View style={{paddingTop:20}}>
+                                        <Text >{item.artinya}</Text>
+                                        </View>
+                                        <View style={{paddingTop:15}}>
+                                          <Text>
+                                            {item.rowi}
+                                          </Text>
+                                        </View>
+                                        </View>
+
+                                        </View>
+                                        </View>
+                                    </View>    
+
+                                    </View>
+                                  
+                                   
+                                    
+                               
+                            </View>
+                            </ScrollView>
+                        )
+                    }}
+                />
+      </View>
       </View>
 
-      <View>
-        
       </View>
-        
-      </View>
+
+     
+      
     )
   }
 }

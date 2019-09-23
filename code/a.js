@@ -5,8 +5,8 @@ import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 
 
-import Screen1 from './screen'
-import Screen2 from './screen2'
+
+import Screen2 from './doa setelah sholat'
 import Screen3 from './screen3'
 import Screen01 from './hal1'
 import Screen02 from './hal2'
@@ -26,7 +26,7 @@ const tabBarIcon = name => ({activeTintColor}) => (
 
 const Macan = createMaterialBottomTabNavigator({
     Sholat:{
-        screen:Screen1,
+        screen:Screen01,
         navigationOptions:{
             tabBarIcon:({tintColor}) => <MaterialIcons name='perm-identity' color={tintColor} size={25}/>,
             tabBarColor : '#004280'
@@ -67,12 +67,6 @@ const Macan = createMaterialBottomTabNavigator({
              header:null
          })
 
-     },
-     hal1:{
-         screen:Screen01,
-         navigationOptions:()=>({
-             header:null
-         })
      },
      hal2:{
         screen:Screen02,
